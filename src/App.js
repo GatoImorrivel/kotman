@@ -6,7 +6,7 @@ import './App.css'
 export const App = () => {
   return (
     <div className='main'>
-      <Titlebar></Titlebar>
+      <Titlebar/>
       <div className='background'></div>
       <img src='/icon.png' alt='Logo' className='logo'/>
       <div className='routes-wrapper'>

@@ -2,11 +2,10 @@
 
 .titlebar {
   background-color: var(--background-lighter);
-  -webkit-user-select: none;
+  -webkit-user-select: auto;
   user-select: none;
   -webkit-app-region: drag;
-  display: inline-block;
-  flex-direction: row;
+  z-index: 1;
 }
 
 .titlebar-logo {
@@ -23,6 +22,7 @@
   align-content: center;
   margin-top: 5px;
   margin-right: 5px;
+  -webkit-app-region: no-drag;
 }
 
 .titlebar-window-button {
@@ -32,20 +32,24 @@
   margin-left: 0.5rem;
   outline: none;
   border: none;
+  -webkit-app-region: no-drag;
 }
 
 .titlebar-window-button:hover {
-  margin: 200px;
+  filter: brightness(85%);
 }
 
 #minimize-btn {
   background-color: var(--window-minimize-button);
+  -webkit-app-region: no-drag;
 }
 
 #fullscreen-btn {
   background-color: var(--window-fullscreen-button);
+  -webkit-app-region: no-drag;
 }
 
 #close-btn {
   background-color: var(--window-close-button);
+  -webkit-app-region: no-drag;
 }

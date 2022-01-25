@@ -19,11 +19,11 @@ html, body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  z-index: -1;
+  box-shadow: 0 0 100px rgba(0,0,0,0.9) inset;
 }
 
 .logo {
-  padding: 1rem;
+  border: black solid 5pt;
   width: 45%;
   height: 45%;
   align-self: center;

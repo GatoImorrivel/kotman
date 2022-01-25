@@ -16,6 +16,10 @@ const createWindow = () => {
     autoHideMenuBar: true,
     width: 1260,
     height: 848,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+    }
   })
 
   // and load the index.html of the app.
