@@ -5,6 +5,6 @@
     --primary-alt: #a5601f;
     --foreground: rgb(241, 229, 217);
     --window-close-button: rgb(207, 75, 52);
-    --window-fullscreen-button: rgb(211, 148, 55);
-    --window-minimize-button: rgb(53, 81, 204);
+    --window-fullscreen-button: var(--primary);
+    --window-minimize-button: rgb(89, 177, 38);
 }

@@ -5,17 +5,18 @@
   -webkit-user-select: auto;
   user-select: none;
   -webkit-app-region: drag;
+  height: 25px;
   z-index: 1;
 }
 
-.titlebar-logo {
+.titlebarLogo {
   float: left;
   width: 15px;
   height: 15px;
   margin: 5px;
 }
 
-.titlebar-buttons-wrapper {
+.buttonsWrapper {
   float: right;
   display: flex;
   flex-direction: row;
@@ -25,7 +26,7 @@
   -webkit-app-region: no-drag;
 }
 
-.titlebar-window-button {
+.windowButton {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -35,21 +36,22 @@
   -webkit-app-region: no-drag;
 }
 
-.titlebar-window-button:hover {
+.windowButton:hover {
   filter: brightness(85%);
+  cursor: pointer;
 }
 
-#minimize-btn {
+.minimizeBtn {
   background-color: var(--window-minimize-button);
   -webkit-app-region: no-drag;
 }
 
-#fullscreen-btn {
+.fullscreenBtn {
   background-color: var(--window-fullscreen-button);
   -webkit-app-region: no-drag;
 }
 
-#close-btn {
+.closeBtn {
   background-color: var(--window-close-button);
   -webkit-app-region: no-drag;
 }
