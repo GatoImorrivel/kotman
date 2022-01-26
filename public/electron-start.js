@@ -1,6 +1,6 @@
 const path = require('path')
 
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const isDev = require('electron-is-dev')
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling
@@ -31,6 +31,19 @@ const createWindow = () => {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+  ipcMain.on('closeWindow', () => {
+    mainWindow.close()
+  })
+  ipcMain.on('minimizeWindow', () => {
+    mainWindow.minimize()
+  })
+  ipcMain.on('fullscreenWindow', () => {
+    if(mainWindow.isMaximized())
+      mainWindow.restore()
+    else
+      mainWindow.maximize()
+  })
+
 }
 
 // This method will be called when Electron has finished
