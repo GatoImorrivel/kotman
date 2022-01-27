@@ -65,7 +65,8 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "KotMan"
+            "name": "KotMan",
+            "icon": "./public/icons/win/icon.ico"
           }
         },
         {

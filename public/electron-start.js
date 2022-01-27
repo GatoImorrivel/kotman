@@ -11,7 +11,7 @@ if (require("electron-squirrel-startup")) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    icon: __dirname + '../build/icons/win/icon.ico',
+    icon: `${path.join(__dirname, 'icons/win/icon.ico')}`,
     frame: false,
     autoHideMenuBar: true,
     width: 1260,
@@ -26,7 +26,7 @@ const createWindow = () => {
   mainWindow.loadURL(
     isDev
       ? 'http://localhost:3000'
-      : `file://${path.join(__dirname, '../build/index.html')}`
+      : `file://${path.join(__dirname, 'index.html')}`
   )
 
   // Open the DevTools.
