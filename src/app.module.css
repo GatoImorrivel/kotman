@@ -35,11 +35,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 .logo {
-  border: black solid 5pt;
   width: 45%;
   height: 45%;
   align-self: center;
-  filter: drop-shadow(15pt 15pt 4px rgb(20, 20, 20));
+  filter: drop-shadow(0pt 0pt 10pt rgb(20, 20, 20));
   border-radius: 50%;
   margin-top: 5%;
 }
@@ -63,9 +62,10 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   padding: 0.5rem;
   font-size: 2em;
   margin: 1rem;
-  filter: drop-shadow(15pt 15pt 4px rgb(20, 20, 20));
+  filter: drop-shadow(0pt 0pt 10pt rgb(20, 20, 20));
 }
 
 .link:hover {
   background-color: var(--primary);
+  cursor: pointer;
 }

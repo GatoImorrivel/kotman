@@ -1,3 +1,7 @@
+import { Titlebar } from '../../components/Titlebar'
+
 export const ManagingRoute = () => {
-  return(<h1>Managing</h1>)
+  return(
+    <Titlebar/>
+  )
 }

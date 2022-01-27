@@ -1,5 +1,36 @@
+@import '../../colorscheme.css';
+
 .main {
   width: 25%;
   height: 100%;
-  background-color: red;
+  background-color: var(--background-alt);
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.logoImg {
+  width: 20%;
+  margin: 1rem;
+}
+
+.logoTitle {
+  color: var(--foreground);
+  align-self: center;
+  font-size: 4vw;
+}
+
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+input, button, textarea, :focus {
+    outline: none; 
 }

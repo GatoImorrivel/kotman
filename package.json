@@ -1,7 +1,9 @@
 {
-  "name": "password-manager",
+  "name": "kotman",
+  "author": "GatoImorrivel",
+  "description": "Simple cross-platform account manager",
+  "main": "./public/electron-start.js",
   "version": "0.1.0",
-  "main": "public/electron-start.js",
   "homepage": "./",
   "private": true,
   "dependencies": {
@@ -63,7 +65,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Gato's Password Manager"
+            "name": "KotMan"
           }
         },
         {
