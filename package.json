@@ -2,7 +2,7 @@
   "name": "kotman",
   "author": "GatoImorrivel",
   "description": "Simple cross-platform account manager",
-  "main": "./public/electron-start.js",
+  "main": "public/electron-start.js",
   "version": "0.1.0",
   "homepage": "./",
   "private": true,
@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "package": "react-scripts build && electron-forge package",
     "make": "react-scripts build && electron-forge make",
-    "generate-icons": "npx electron-icon-maker --input=./public/icon.png --output=public"
+    "generate-icons": "npx electron-icon-maker --input=./public/icon.png --output=public && cp -r ./public/icons ./src/icons/"
   },
   "eslintConfig": {
     "extends": [
@@ -47,11 +47,6 @@
     ]
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.63",
-    "@electron-forge/maker-deb": "^6.0.0-beta.63",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
-    "@electron-forge/maker-zip": "^6.0.0-beta.63",
     "concurrently": "^7.0.0",
     "electron": "^16.0.7",
     "react-router-dom": "^6.2.1",
